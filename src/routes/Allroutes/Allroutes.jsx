@@ -7,6 +7,7 @@ import Nosotros from '../../pages/Nosotros/Nosotros';
 import Reservas from '../../pages/Reservas/Reservas';
 import Cartadisp from '../../pages/Menu/Cartadisp';
 
+
 const Allroutes = () => {
   return (
     <Routes>
