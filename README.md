@@ -5,7 +5,7 @@ La bodega cervecera es un Resto-bar que busca difundir la cultura cervecera a lo
 
 ## concideraciones
 
-Responsivo a moviles
+### Responsivo a moviles
 Header
 Footer
 Selectores CSS con React-Boostrap
