@@ -19,7 +19,7 @@ const Navigation = () => {
                 {['lg'].map((expand) => (
                   <Navbar key={expand} bg="light" expand={expand} className="mb-3">
                     <Container fluid>
-                      <Navbar.Brand href="#">Navbar Offcanvas</Navbar.Brand>
+                      <Navbar.Brand href="/inicio">La bodega cervecera</Navbar.Brand>
                       <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
                       <Navbar.Offcanvas
                         id={`offcanvasNavbar-expand-${expand}`}
@@ -28,17 +28,17 @@ const Navigation = () => {
                       >
                         <Offcanvas.Header closeButton>
                           <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
-                            Offcanvas
+                            La bodega cervecera
                           </Offcanvas.Title>
                         </Offcanvas.Header>
                         <Offcanvas.Body>
-                          <Nav className="justify-content-end flex-grow-1 pe-3">
+                          <Nav className="justify-content-start flex-grow-1 pe-3">
                             <Nav.Link href='/inicio'>Inicio</Nav.Link>
-                            {/* <Nav.Link href='/menu'>Menu</Nav.Link>
-                            <Nav.Link href='/reservas'>Reservas</Nav.Link>
+                            <Nav.Link href='/cartadisp'>Menu</Nav.Link>
+                            {/* <Nav.Link href='/reservas'>Reservas</Nav.Link>
                             <Nav.Link href='/nosotros'>Nosotros</Nav.Link>
                             <Nav.Link href='/contactanos'>Contactanos</Nav.Link> */}
-                            <Nav.Link href='/cartadisp'>Reservas</Nav.Link>
+                            <Nav.Link href='/reservas'>Reservas</Nav.Link>
 
 
                             {/* <NavDropdown
@@ -55,7 +55,7 @@ const Navigation = () => {
                               </NavDropdown.Item>
                             </NavDropdown> */}
                           </Nav>
-                          <Form className="d-flex">
+                          {/* <Form className="d-flex">
                             <Form.Control
                               type="search"
                               placeholder="Search"
@@ -63,7 +63,7 @@ const Navigation = () => {
                               aria-label="Search"
                             />
                             <Button variant="outline-success">Search</Button>
-                          </Form>
+                          </Form> */}
                         </Offcanvas.Body>
                       </Navbar.Offcanvas>
                     </Container>

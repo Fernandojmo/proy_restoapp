@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { db } from '../../config/Firebase';
 import { collection, getDocs} from 'firebase/firestore';
-import Tarjeta from  '../../components/card'
+import Tarjeta from  '../../components/Tarjeta'
 
 // import Card from '../../components/card'
 
