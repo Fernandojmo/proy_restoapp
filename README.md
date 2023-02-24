@@ -14,4 +14,4 @@ La bodega cervecera es un Resto-bar que busca difundir la cultura cervecera a lo
 7. Seccion de reservas con respectivo formulario
 8.  de datos en firebase.
 9. Repositorio Github
-10. Despliegue en netlify con ci= npm build : ## https://quiet-nasturtium-9c2396.netlify.app/
+10. Despliegue en netlify con ci= npm build : https://quiet-nasturtium-9c2396.netlify.app/
