@@ -16,29 +16,29 @@ const Navigation = () => {
         <NavLink to='/contactanos'>Contactanos</NavLink> */}
 
               <>
-                {['lg'].map((expand) => (
-                  <Navbar key={expand} bg="light" expand={expand} className="mb-3">
+                {['sm'].map((expand) => (
+                  <Navbar key={expand} bg="warning" expand={expand} className="mb-3">
                     <Container fluid>
-                      <Navbar.Brand href="/inicio">La bodega cervecera</Navbar.Brand>
+                      <Navbar.Brand href="/inicio" className='h1'>La bodega cervecera</Navbar.Brand>
                       <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
                       <Navbar.Offcanvas
                         id={`offcanvasNavbar-expand-${expand}`}
                         aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
                         placement="end"
                       >
-                        <Offcanvas.Header closeButton>
+                        <Offcanvas.Header className='bg-warning h1' closeButton>
                           <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
                             La bodega cervecera
                           </Offcanvas.Title>
                         </Offcanvas.Header>
                         <Offcanvas.Body>
                           <Nav className="justify-content-start flex-grow-1 pe-3">
-                            <Nav.Link href='/inicio'>Inicio</Nav.Link>
-                            <Nav.Link href='/cartadisp'>Menu</Nav.Link>
+                            <Nav.Link href='/inicio' className='text-white bg-dark border-dark rounded m-1 p-2'>Inicio</Nav.Link>
+                            <Nav.Link href='/cartadisp' className='text-white bg-dark border-dark rounded m-1 p-2'>Menu</Nav.Link>
                             {/* <Nav.Link href='/reservas'>Reservas</Nav.Link>
                             <Nav.Link href='/nosotros'>Nosotros</Nav.Link>
                             <Nav.Link href='/contactanos'>Contactanos</Nav.Link> */}
-                            <Nav.Link href='/reservas'>Reservas</Nav.Link>
+                            <Nav.Link href='/reservas' className='text-white bg-dark border-dark rounded m-1 p-2'>Reservas</Nav.Link>
 
 
                             {/* <NavDropdown
