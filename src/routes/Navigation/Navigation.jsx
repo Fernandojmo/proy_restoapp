@@ -17,9 +17,9 @@ const Navigation = () => {
 
               <>
                 {['sm'].map((expand) => (
-                  <Navbar key={expand} bg="warning" expand={expand} className="mb-3">
+                  <Navbar key={expand} bg="warning" expand={expand}>
                     <Container fluid>
-                      <Navbar.Brand href="/inicio" className='h1'>La bodega cervecera</Navbar.Brand>
+                      <Navbar.Brand href="/" className='h1'>La bodega cervecera</Navbar.Brand>
                       <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
                       <Navbar.Offcanvas
                         id={`offcanvasNavbar-expand-${expand}`}
@@ -33,7 +33,7 @@ const Navigation = () => {
                         </Offcanvas.Header>
                         <Offcanvas.Body>
                           <Nav className="justify-content-start flex-grow-1 pe-3">
-                            <Nav.Link href='/inicio' className='text-white bg-dark border-dark rounded m-1 p-2'>Inicio</Nav.Link>
+                            <Nav.Link href='/' className='text-white bg-dark border-dark rounded m-1 p-2'>Inicio</Nav.Link>
                             <Nav.Link href='/cartadisp' className='text-white bg-dark border-dark rounded m-1 p-2'>Menu</Nav.Link>
                             {/* <Nav.Link href='/reservas'>Reservas</Nav.Link>
                             <Nav.Link href='/nosotros'>Nosotros</Nav.Link>

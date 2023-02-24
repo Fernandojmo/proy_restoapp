@@ -7,12 +7,11 @@ import Nosotros from '../../pages/Nosotros/Nosotros';
 import Reservas from '../../pages/Reservas/Reservas';
 import Cartadisp from '../../pages/Menu/Cartadisp';
 
-
 const Allroutes = () => {
   return (
     <Routes>
         <Route path='/' element = {<Layout/>}>
-            <Route path='/inicio' element = {<Inicio/>}/>
+            <Route path='/' element = {<Inicio/>}/>
             <Route path='/menu' element = {<Menu/>}/>
             <Route path='/reservas' element = {<Reservas/>}/>
             <Route path='/nosotros' element = {<Nosotros/>}/>
