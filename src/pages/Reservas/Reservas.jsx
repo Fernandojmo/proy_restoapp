@@ -8,7 +8,7 @@ import Form from 'react-bootstrap/Form';
 // import { async } from '@firebase/util';
 
 const Reservas = () => {
-
+  // const refresh =()=> window.location.reload(true)
     const [reserva, setReserva] = useState([])
         useEffect (()=>{
         const getReserva = async() => {
@@ -60,6 +60,7 @@ const Reservas = () => {
           console.log(error)
       }
       setUser({...valoresIniciales})
+      await window.location.reload(true)
     }
 
     return (
@@ -68,11 +69,12 @@ const Reservas = () => {
               <fieldset>
                 <Form.Group className="mb-3 m-2">
                   <Form.Label htmlFor="disabledTextInput">Nombre de la reserva:  </Form.Label>
-                  <Form.Control onChange={catchInputs} value={user.nombre} name='nombre' id="disabledTextInput" placeholder="Nombre" />
+                  <Form.Control onChange={catchInputs} value={user.nombre} required name='nombre' id="disabledTextInput" placeholder="Nombre" />
                 </Form.Group>
                 <Form.Group className="mb-3 m-2">
                   <Form.Label htmlFor="disabledSelect">Mesa a reservar</Form.Label>
-                  <Form.Select onChange={catchInputs} value={user.mesa} name='mesa' id="disabledSelect">
+                  <Form.Select onChange={catchInputs} value={user.mesa} required name='mesa' id="disabledSelect">
+                    <option></option>
                     <option>1</option>
                     <option>2</option>
                     <option>3</option>
@@ -94,7 +96,7 @@ const Reservas = () => {
                           <div className="col-md-4 m-2">
                               <Form.Group controlId="dob">
                                   <Form.Label>Fecha a reservar</Form.Label>
-                                  <Form.Control onChange={catchInputs} value={user.fecha} type="date" name="fecha" placeholder="Date" />
+                                  <Form.Control onChange={catchInputs} value={user.fecha} required type="date" name="fecha" placeholder="Date" />
                               </Form.Group>
                           </div>
                       </div>
@@ -104,12 +106,13 @@ const Reservas = () => {
                           <div className="col-md-4 m-2">
                               <Form.Group controlId="dob">
                                   <Form.Label>Hora de la reserva</Form.Label>
-                                  <Form.Control onChange={catchInputs} value={user.hora} type="time" name="hora" placeholder="time" />
+                                  <Form.Control onChange={catchInputs} value={user.hora} required type="time" name="hora" placeholder="time" />
                               </Form.Group>
                           </div>
                       </div>
                   </div>
                   <Form.Check 
+                      required
                       className='m-2'
                       type="checkbox"
                       id="disabledFieldsetCheck"
